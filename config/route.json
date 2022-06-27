@@ -1,0 +1,25 @@
+{
+    "rules": [
+      {
+        "ip": [
+          "geoip:private"
+        ],
+        "outboundTag": "blocked",
+        "type": "field"
+      },
+      {
+        "outboundTag": "blocked",
+        "protocol": [
+          "bittorrent"
+        ],
+        "type": "field"
+      },
+      {
+        "type": "field",
+        "outboundTag": "GoNetflix",
+        "domain": [
+          "geosite:netflix"
+        ]
+      }
+    ]
+  }
